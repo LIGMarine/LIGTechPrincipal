@@ -1,12 +1,61 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+const title = 'LIG Tech Principal';
+const links = [
+	{ label: 'Company Website', href: 'https://ligmarine.com/', icon: 'mdi:web' },
+	{ label: 'Apply Online', href: 'https://www.ligmarine.com/jobs', icon: 'mdi:briefcase-outline' },
+	{ label: 'Chat with us on Whatsapp', href: 'https://whatsapp.com/channel/0029VbC8B2F5K3zZBSfpdw1p', icon: 'simple-icons:whatsapp' },
+	{ label: 'Chat with us on Discord', href: 'https://discord.gg/wE8S95xhj6', icon: 'simple-icons:discord' }
+];
+const features = [
+	{ title: 'Job Benefits', body: 'Starting Salary:  $150,000+ \n Fully Remote' },
+	{ title: 'Impact', body: 'Build tools that directly help customers and internal teams' },
+	{ title: 'Ownership', body: 'Own projects end-to-end; ship, learn, and iterate quickly' },
+	{ title: 'Collaboration', body: 'Work closely with management for clear priorities and fast decisions' },
+	{ title: 'Tech Stack', body: 'Dotnet, Azure, Microsoft Devops, GitHub, CI / CD, AI,  or anything that makes sense' },
+	{ title: 'Growth', body: 'Influence architecture, improve pipelines, and learn continuously' },
+	{ title: 'Quality', body: 'Focus on security, reliability, and pragmatic best practices' },
+	{ title: 'Variety', body: 'Blend of frontend, backend, and cloud automation work' },
+	{ title: 'Visibility', body: 'High-impact work recognized across the organization' },
+	{ title: 'Codeless Oppotunities', body: 'When it makes sense, use N8N, Azure Pipelines, low code solutions for high efficiency' }
+];
 ---
 
 <Layout>
-	Hello World 
-	<Welcome />
+	<section class="mx-auto max-w-md sm:max-w-2xl lg:max-w-4xl text-center">
+		<div class="mb-2 sm:mb-3 brand-hero accent-glow">
+			<div class="brand-header">
+				<div class="brand-header-inner hover:scale-[1.02]">
+					<img src="/favicon.svg" alt="LIG" class="h-7 w-7 sm:h-8 sm:w-8" />
+					<span class="brand-name">{title}</span>
+				</div>
+			</div>
+		
+		</div>
+	<div class="brand-divider"></div>
+		<ul class="grid gap-3 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+			{links.map((link) => (
+				<li>
+					<a class="linktree-btn" href={link.href} target="_blank" rel="noopener noreferrer">
+						{link.icon && <iconify-icon icon={link.icon} width="20" height="20"></iconify-icon>}
+						<span>{link.label}</span>
+					</a>
+				</li>
+			))}
+		</ul>
+	<div class="brand-divider"></div>
+		<div class="mt-4 sm:mt-5">
+			<ul class="grid gap-3 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+				{features.map((f) => (
+					<li>
+						<div class="feature-box">
+							<div class="feature-title">{f.title}</div>
+							<div class="feature-body whitespace-pre-line">{f.body}</div>
+						</div>
+					</li>
+				))}
+			</ul>
+		</div>
+	</section>
 </Layout>
