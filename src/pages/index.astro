@@ -2,6 +2,11 @@
 import Layout from '../layouts/Layout.astro';
 
 const title = 'LIG Tech Principal';
+
+const heroHeadline = "Small Team. Custom Tools. Serious Speed.";
+const heroTagline = "We’re a specialized insurance brokerage building our own internal tools to work faster than much bigger competitors.";
+const heroSubline = "This hire will be our lead engineer – owning architecture, delivery, and direction for all in-house systems.";
+
 const links = [
 	{ label: 'Company Website', href: 'https://ligmarine.com/', icon: 'mdi:web' },
 	{ label: 'Apply Online', href: 'https://www.ligmarine.com/jobs', icon: 'mdi:briefcase-outline' },
@@ -11,9 +16,9 @@ const links = [
 ];
 const features = [
 	{ title: 'Job Benefits', body: 'Starting Salary:  $150,000+ \n Fully Remote' },
-	{ title: 'Impact', body: 'Build tools that directly help customers and internal teams' },
+	{ title: 'Impact', body: 'Build the internal systems that power our entire business and give us speed others can’t match' },
 	{ title: 'Ownership', body: 'Own projects end-to-end; ship, learn, and iterate quickly' },
-	{ title: 'Collaboration', body: 'Work closely with management for clear priorities and fast decisions' },
+	{ title: 'Collaboration', body: 'Work directly with the founders on priorities and real decisions each week' },
 	{ title: 'Tech Stack', body: 'Dotnet, Azure, Microsoft Devops, GitHub, CI / CD, AI,  or anything that makes sense' },
 	{ title: 'Growth', body: 'Influence architecture, improve pipelines, and learn continuously' },
 	{ title: 'Quality', body: 'Focus on security, reliability, and pragmatic best practices' },
@@ -24,6 +29,11 @@ const features = [
 ---
 
 <Layout>
+	<section class="hero">
+		<h1>{heroHeadline}</h1>
+		<p class="tagline">{heroTagline}</p>
+		<p class="subline">{heroSubline}</p>
+	</section>
 	<section class="mx-auto max-w-md sm:max-w-2xl lg:max-w-4xl text-center">
 		<div class="mb-2 sm:mb-3 brand-hero accent-glow">
 			<div class="brand-header">
