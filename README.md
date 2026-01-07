@@ -8,6 +8,7 @@ This repository contains the marketing site for the LIG Tech Principal role.
 - Apply Online: https://www.ligmarine.com/jobs
 - Chat with us on WhatsApp: https://whatsapp.com/channel/0029VbC8B2F5K3zZBSfpdw1p
 - Chat with us on Discord: https://discord.gg/wE8S95xhj6
+- View Site on GitHub: https://github.com/LIGMarine/LIGTechPrincipal
 
 ## Job Highlights
 
