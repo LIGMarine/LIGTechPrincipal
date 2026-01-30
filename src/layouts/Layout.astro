@@ -31,7 +31,11 @@ const siteTitle = 'LIG Tech Principal';
 	<body class="min-h-screen text-gray-900 dark:text-gray-100 bg-gradient-to-b from-brand-primary/12 to-brand-lightBg dark:bg-none dark:bg-black">
 		<div class="min-h-screen">
 			<main class="px-4 pt-12">
-				<slot />
+				<div class="mx-auto max-w-md sm:max-w-2xl lg:max-w-4xl py-8 px-4 text-gray-900 dark:text-gray-100 font-sans">
+					<div class="prose prose-invert dark:prose-invert max-w-none text-gray-100">
+						<slot />
+					</div>
+				</div>
 			</main>
 			<button id="theme-toggle" aria-label="Toggle theme" class="fixed bottom-4 right-4 rounded-full p-3 border border-gray-200 bg-white/80 backdrop-blur shadow-sm hover:bg-white focus:outline-none focus:ring-2 focus:ring-brand-accent dark:bg-white/5 dark:border-white/10 dark:hover:bg-white/10">
 				<iconify-icon icon="mdi:moon-waning-crescent" width="22" height="22" class="inline dark:hidden"></iconify-icon>

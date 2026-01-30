@@ -1,6 +1,6 @@
-# ---
+---
 layout: ../layouts/Layout.astro
-# ---
+---
 # Tech Principal — In‑House Systems
 
 Senior technical lead responsible for designing, building, and owning custom internal software that powers underwriting and operations at LIG Marine Managers.
